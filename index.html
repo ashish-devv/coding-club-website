@@ -37,8 +37,8 @@
       .bgwallpaper {
         background-image: linear-gradient(
             180deg,
-            rgba(66, 61, 61, 0.281),
-            rgba(61, 60, 60, 0.295)
+            rgba(41, 37, 37, 0.712),
+            rgba(61, 60, 60, 0.527)
           ),
           url("./img/wallp.jpg");
         background-repeat: no-repeat;
@@ -47,9 +47,10 @@
         background-size: cover;
       }
       .card-1:hover {
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-          0 10px 10px rgba(0, 0, 0, 0.22);
+        box-shadow: 0 14px 28px rgba(6, 1, 14, 0.479),
+          0 20px 20px rgba(65, 6, 230, 0.61);
       }
+
       /* width */
       ::-webkit-scrollbar {
         width: 10px;
@@ -68,6 +69,9 @@
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
         background: rgb(0, 0, 0);
+      }
+      .addingspace {
+        padding-top: 60px;
       }
     </style>
 
@@ -120,18 +124,35 @@
           <li class="nav-item active ml-2">
             <a class="nav-link" href="#contact">Contact Us</a>
           </li>
+          <li class="nav-item active ml-2">
+            <a
+              class="nav-link btn btn-primary border border-white"
+              href="#contact"
+              ><i class="fas fa-sign-in-alt"></i> Sign In / Sign up</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
     <!-- Navbar end -->
     <div class="jumbotron jumbotron-fluid bgwallpaper text-white pt-4 mt-5">
-      <div class="container pt-4 mt-4">
-        <h1 class="display-4 text-center pt-4 mt-4">
-          <b><i class="fas fa-code"></i> Coding Club 💻</b>
-        </h1>
-        <p class="lead text-center">
-          Promoting Technology, Creativity and Innovation
-        </p>
+      <div class="container pt-4 mt-4 addingspace">
+        <div class="addingspace">
+          <h1 class="display-4 text-center pt-4 mt-4">
+            <b
+              ><i class="fas fa-code"></i>
+              <img
+                src="https://see.fontimg.com/api/renderfont4/ZVWyq/eyJyIjoiZnMiLCJoIjoxODksInciOjEyNTAsImZzIjoxNTEsImZnYyI6IiNGRkZGRkYiLCJiZ2MiOiIjMTExMTExIiwidCI6MX0/Q29kaW5nIENsdWI/your-dreams-demo-brush.png"
+                class="img-fluid"
+                alt=""
+              />
+              💻</b
+            >
+          </h1>
+          <p class="lead text-center">
+            Promoting Technology, Creativity and Innovation
+          </p>
+        </div>
       </div>
     </div>
     <!-- About Section-->
