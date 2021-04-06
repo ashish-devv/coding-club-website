@@ -28,13 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js	">
-     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
     <style>
       html {
         scroll-behavior: smooth;
@@ -93,6 +90,20 @@
         margin: 3px;
         color: #fff !important;
       }
+      .changecolorbg {
+    background: linear-gradient(270deg, #4b79a1, #283e51, #d11010);
+    background-size: 600% 600%;
+
+    -webkit-animation: popcolorchangeanimation 4s ease infinite;
+    -moz-animation: popcolorchangeanimation 4s ease infinite;
+    animation: popcolorchangeanimation 4s ease infinite;
+}
+
+@-webkit-keyframes popcolorchangeanimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
     </style>
 
     <title>PhOeNiX-Coding Club</title>
@@ -175,6 +186,12 @@
                   <i class="fas fa-bug"></i> Contact Us 
                 </a>
               </li>
+              <li class="nav-item active ml-2">
+                <button type="button" class=" nav-link btn btn-toolbar border border-white" data-toggle="modal" data-target="#staticBackdrop" id="btntoclick">
+                  Info 
+                </button>
+              </li>
+              
               <li class="nav-item active ml-2">
                 <a
                   class="nav-link btn btn-toolbar border border-white"
@@ -767,7 +784,54 @@
     <img src="img/logo/Centurion-University-of-Technology-and-Management.jpg" alt="centurion_logo" class="pb-0 mb-0 pt-0 mt-0 img-fluid center">
   </div>
     </div> 
-    
+
+
+    <!--
+      modal
+
+    -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Message From Our Side 🙏</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body changecolorbg text-white">
+        <p>
+          Hi all,
+It gives me immense pleasure to announce that a group of students (1st, 2nd and 3rd year) of Department of Computer Science, SoET, Paralakhemundi Campus under the mentorship of Abinas Panda and Mohd Sameen Chishti (Assistant Professor, SoET) and my guidance has came up with the idea of Coding Club "PHOENIX CLUB". The idea of Phoenix club is to have Collections of people Who are Minded Towards Technology and Programming. Here, the members will learn from the other members and will try to solve the problem which they face every day through the use of technology. The memebrs are full of ideas and are highly motivated to undertake projects which help them to sharpen their coding, prsentation, leadership and soft skills.
+<br>
+Currently, the club is working on few projects like:
+<br>
+1. Subject Credit Manager
+<br>
+2. Automatic Attendance 
+<br>
+3. Virtual Lab for programming
+<br>
+And many more to come....
+<br>
+Those who have zeal and spark inside their heart toward computers or eager to learn irrespective of  branch, feel free to contact. 
+ <br>
+Club Website:- <a href="https://www.phoenixclub.tk/">https://www.phoenixclub.tk/</a> 
+<br>
+
+The website for the club is itself a full project. Please visit the website and give your valuable comments directly to the student team.
+        </p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">❌ Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
     <!--footer-->
     <footer class="bg-light text-center text-lg-start text-white">
       <!-- Copyright -->
@@ -842,6 +906,9 @@
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
       };
+       $(window).on('load', function() {
+        $('#btntoclick').click();
+    });
     </script>
      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script
