@@ -31,6 +31,7 @@
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
       html {
@@ -341,7 +342,9 @@
       <hr />
       <br />
       <div class="card-deck">
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <img src="./img/My_pic.jpeg" class="card-img-top" alt="..."   height="250px"/>
           <div class="card-body">
             <h5 class="card-title">Ashish</h5>
@@ -361,13 +364,15 @@
             </p>
           </div>
         </div>
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <img
             src="./img/members/pavan_1280x927.jpeg" 
             class="card-img-top"
             alt="..."  height="250px"
           />
-          <div class="card-body">
+          <div class="card-body" >
             <h5 class="card-title">PavanKalyan</h5>
             <p class="card-text">AI/Ml Enthusiast <i class="fas fa-robot"></i></p>
             <p class="card-text">
@@ -385,7 +390,9 @@
             </p>
           </div>
         </div>
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" >
           <img src="./img/members/sonu.jpeg" class="card-img-top" alt="..."  height="250px"/>
           <div class="card-body">
             <h5 class="card-title">Sonu kumar</h5>
@@ -406,7 +413,9 @@
           </div>
         </div>
 
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
           <img src="./img/Ankit_1280x927.png" class="card-img-top" alt="..."   height="250px" />
           <div class="card-body">
             <h5 class="card-title">Ankit</h5>
@@ -434,7 +443,7 @@
       <hr />
       <br />
       <div class="card-deck">
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-left" data-aos-duration="1700">
           <img
             src="./img/abinas.jpg"
             class="card-img-top img-fluid cardimg"
@@ -459,7 +468,7 @@
           </div>
         </div>
 
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-right" data-aos-duration="1700">
           <img
             src="./img/sammen.jpeg"
             class="card-img-top img-fluid cardimg"
@@ -726,7 +735,7 @@
  
     <br>
     <div class="container">
-    <div class="card-deck pb-4 pt-4 mt-4">
+    <div class="card-deck pb-4 pt-4 mt-4" data-aos="flip-right" data-aos-duration="1700">
       <div class="card card-1 border border-dark">
         <img src="./img/credit-calculator.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
@@ -738,7 +747,7 @@
           </div>
       </div>
 
-      <div class="card card-1 border border-dark">
+      <div class="card card-1 border border-dark" data-aos="flip-right" data-aos-duration="1700">
         <img src="./img/attandance_system.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Automatic Attendance Taker</h5>
@@ -750,7 +759,7 @@
           </div>
         </div>
 
-        <div class="card card-1 border border-dark">
+        <div class="card card-1 border border-dark" data-aos="flip-right" data-aos-duration="1700">
           <img src="./img/virtual_lab.png" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Virtual Lab For CSE</h5>
@@ -906,7 +915,9 @@ The website for the club is itself a full project. Please visit the website and 
     </footer>
 
    <!--Optional JavaScript; choose one of the two! -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script>
+       AOS.init();
       var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
