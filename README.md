@@ -9,4 +9,6 @@ Coding Club Website Starting From Scratch - CUTM.
 
 ## DEMO
 
+<img src="https://github.com/ashish-devv/coding-club-website/blob/main/img/demo.gif" />
+
 <img src="https://github.com/ashish-devv/coding-club-website/blob/main/m7.png" />
